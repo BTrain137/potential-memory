@@ -5,6 +5,7 @@ import { Provider } from '@shopify/app-bridge-react';
 import '@shopify/polaris/styles.css';
 import translations from '@shopify/polaris/locales/en.json';
 import Cookies from 'js-cookie';
+import { ApolloProvider } from 'react-apollo';
 
 class MyApp extends App {
   render() {
@@ -20,7 +21,9 @@ class MyApp extends App {
         </Head>
           <Provider config={config}>
             <AppProvider i18n={translations}>
-              <Component {...pageProps} />
+              <ApolloProvider client={client}>
+                <Component {...pageProps} />
+              </ApolloProvider>
             </AppProvider>
           </Provider>
       </React.Fragment>
