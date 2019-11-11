@@ -5,8 +5,8 @@ import { Provider } from '@shopify/app-bridge-react';
 import '@shopify/polaris/styles.css';
 import translations from '@shopify/polaris/locales/en.json';
 import Cookies from 'js-cookie';
-import { ApolloProvider } from 'react-apollo';
 import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
 
 const client = new ApolloClient({
   fetchOptions: {
