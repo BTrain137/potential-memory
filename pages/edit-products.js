@@ -52,7 +52,7 @@ class EditProduct extends React.Component {
           );
           const showToast = data && data.productVariantUpdate && (
             <Toast
-              content="Successfully updated"
+              content="Sucessfully updated"
               onDismiss={() => this.setState({ showToast: false })}
             />
           );

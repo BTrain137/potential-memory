@@ -1,19 +1,25 @@
 {
-  "name": "sample-embedded-app",
+  "name": "shopify-demo-app-node-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-local": "next",
     "dev": "node server.js",
     "build": "next build",
-    "start-local": "next start",
     "start": "NODE_ENV=production node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shopify/shopify-demo-app-node-react.git"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Shopify",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shopify/shopify-demo-app-node-react/issues"
+  },
+  "homepage": "https://github.com/Shopify/shopify-demo-app-node-react#readme",
   "dependencies": {
     "@shopify/app-bridge": "^1.6.8",
     "@shopify/app-bridge-react": "^1.6.8",
