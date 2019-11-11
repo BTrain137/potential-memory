@@ -36,13 +36,13 @@ app.prepare().then(() => {
       ],
       afterAuth(ctx) {
         const { shop, accessToken } = ctx.session;
-        ctx.cookies.set('shopOrigin', shop, { httpOnly: false });
+        ctx.cookies.set("shopOrigin", shop, { httpOnly: false });
         ctx.redirect('/');
       },
     }),
   );
 
-  server.use(graphQLProxy({version: ApiVersion.October19}))
+  server.use(graphQLProxy({ version: ApiVersion.April19 }));
   server.use(verifyRequest());
   server.use(async (ctx) => {
     await handle(ctx.req, ctx.res);
