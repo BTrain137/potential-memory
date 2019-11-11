@@ -1,2 +1,2 @@
 # potential-memory
-Full Stack Firebase
+Shopify Polaris Sample App

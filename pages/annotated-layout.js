@@ -7,8 +7,8 @@ import {
   Page,
   SettingToggle,
   Stack,
-  TextStyle,
   TextField,
+  TextStyle,
 } from '@shopify/polaris';
 
 class AnnotatedLayout extends React.Component {
