@@ -29,6 +29,8 @@ app.prepare().then(() => {
         'write_products', 
         'read_product_listings',
         'write_product_listings',
+        'read_online_store_pages', 
+        'write_online_store_pages',
       ],
       afterAuth(ctx) {
         const { shop, accessToken } = ctx.session;
